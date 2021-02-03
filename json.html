@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <h1>JSON</h1>
+    <script>
+        const student = {
+            name : "Minhaz",
+            ID:27,
+            dept:"CSE",
+            about:{
+                type:"loving Person",
+                fav: "Football",
+                fav_person : "Muhammad (SW)"
+            }
+        }
+        console.log(student);
+        const studentJson = JSON.stringify(student);
+        console.log(studentJson);
+        const parseStudent = JSON.parse(studentJson);
+        console.log(parseStudent);
+    </script>
+</body>
+</html>
